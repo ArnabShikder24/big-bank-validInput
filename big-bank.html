@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big-Bank Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center my-8">let's get some <span class="font-semibold text-purple-600 font-mono">Mooooney</span>!!!</h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- Balance -->
+        <section>
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-green-400 p-10 rounded">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-4xl">$<span id="deposit">00</span></h4>
+                </div>
+                <div class="bg-emerald-400 p-10 rounded">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-4xl">$<span id="withdraw">00</span></h4>
+                </div>
+                <div class="bg-yellow-400 p-10 rounded">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-4xl">$<span id="main-balance">1240</span></h4>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and Withdraw -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-green-300 rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">please Deposit</h3>
+                    <div>
+                        <input id="deposit-input" class="border-2 border-gray-400 p-1 block w-full my-6" type="text" placeholder="Deposit Here">
+                        <button id="deposit-btn" class="px-5 py-1.5 bg-indigo-500 text-white font-semibold">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-emerald-300 rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold mb-4  text-white">please Withdraw</h3>
+                    <div>
+                        <input id="withdraw-input" class="border-2 border-gray-400 p-1 block w-full my-6" type="text" placeholder="Deposit Here">
+                        <button id="withdraw-btn" class="px-5 py-1.5 bg-indigo-500 text-white font-semibold">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
