@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big-Bank Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+}
+    </style>
 </head>
 <body>
     <header>
@@ -35,14 +48,14 @@
                 <div class="bg-green-300 rounded-lg p-8">
                     <h3 class="text-2xl font-semibold mb-4 text-white">please Deposit</h3>
                     <div>
-                        <input id="deposit-input" class="border-2 border-gray-400 p-1 block w-full my-6" type="text" placeholder="Deposit Here">
+                        <input id="deposit-input" class="border-2 border-gray-400 p-1 block w-full my-6" type="number" placeholder="Deposit Here">
                         <button id="deposit-btn" class="px-5 py-1.5 bg-indigo-500 text-white font-semibold">Deposit</button>
                     </div>
                 </div>
                 <div class="bg-emerald-300 rounded-lg p-8">
                     <h3 class="text-2xl font-semibold mb-4  text-white">please Withdraw</h3>
                     <div>
-                        <input id="withdraw-input" class="border-2 border-gray-400 p-1 block w-full my-6" type="text" placeholder="Deposit Here">
+                        <input id="withdraw-input" class="border-2 border-gray-400 p-1 block w-full my-6" type="number" placeholder="Deposit Here">
                         <button id="withdraw-btn" class="px-5 py-1.5 bg-indigo-500 text-white font-semibold">Withdraw</button>
                     </div>
                 </div>
